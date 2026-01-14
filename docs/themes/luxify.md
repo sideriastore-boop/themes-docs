@@ -255,6 +255,69 @@ sidebar_position: 3
 .add_to_cart_btn {
 }
 ```
+<div class="purchase-buttons">
+  <button class="checkout_btn">إتمام الشراء</button>
+  <button class="add_to_cart_btn">أضف للسلة</button>
+
+  <!-- payment note -->
+  <div class="payment-note">
+    <div class="note-row">
+      <span class="icon">
+        <!-- أيقونة الشحن -->
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128.896 736H96a32 32 0 0 1-32-32V224a32 32 0 0 1 32-32h576a32 32 0 0 1 32 32v96h164.544a32 32 0 0 1 31.616 27.136l54.144 352A32 32 0 0 1 922.688 736h-91.52a144 144 0 1 1-286.272 0H415.104a144 144 0 1 1-286.272 0z"/>
+        </svg>
+      </span>
+      <p>
+        رسوم الشحن تُحسب عند الدفع.<br>
+        التسليم المُقدّر في خلال 1–4 أيام عمل.
+      </p>
+    </div>
+
+    <div class="note-row">
+      <span class="icon">
+        <!-- أيقونة الدفع -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.1" d="M3 10V15C3 16.8856 3 17.8284 3.58579 18.4142C4.17157 19 5.11438 19 7 19L17 19C18.8856 19 19.8284 19 20.4142 18.4142C21 17.8284 21 16.8856 21 15V10H3Z"/>
+          <path d="M3.5 10H20.5" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6 14H8" stroke-width="2" stroke-linecap="round"/>
+          <path d="M11 14H13" stroke-width="2" stroke-linecap="round"/>
+          <path d="M3 9C3 7.11438 3 6.17157 3.58579 5.58579C4.17157 5 5.11438 5 7 5H17C18.8856 5 19.8284 5 20.4142 5.58579C21 6.17157 21 7.11438 21 9V15C21 16.8856 21 17.8284 20.4142 18.4142C19.8284 19 18.8856 19 17 19H7C5.11438 19 4.17157 19 3.58579 18.4142C3 17.8284 3 16.8856 3 15V9Z"
+                stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <p>الدفع نقدًا عند الاستلام</p>
+    </div>
+  </div>
+</div>
+.payment-note {
+  direction: rtl;
+  font-size: 14px;
+  color: #374151;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.note-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.note-row .icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.note-row svg {
+  width: 100%;
+  height: 100%;
+  stroke: #374151;
+  fill: none;
+}
 
 ![Checkout Button](./luxify-assets/button.png)
 
